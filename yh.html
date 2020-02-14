@@ -4,8 +4,6 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<title>温暖的印记</title>
-	<script type="text/javascript" src="node_modules/vue/dist/vue.js"></script>
-	<script type="text/javascript" src="node_modules/axios/dist/axios.js"></script>
 	<link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
 	 <style type="text/css">
 	 	body{
@@ -34,6 +32,7 @@
 	 	}
 	 	.fr img{
 	 		vertical-align: top;
+	 		width: 100px;
 
 	 	}
 	 	.flipOutY {
@@ -48,55 +47,36 @@
 <div id="app">
 	<h2 class="animated Flippers flipInY" style="text-align: center;">做简单快乐的人，挽手亲密纯粹的爱</h2>
 	<div class="draw fl">
-			<p class="animated Sliders slideInLeft delay-1s">
+			<p class="animated Flippers flip delay-1s">
 			致亲爱的郭先生
 			</p>
-			<p class="animated Sliders slideInLeft delay-2s">
+			<p class="animated Rotating Entrances rotateInDownRight delay-2s">
 			爱情公寓全剧终了
 			</p>
-			<p class="animated Sliders slideInLeft delay-3s">最好的朋友在身边，最爱的人的对门</p>
-			<p class="animated Sliders slideInLeft delay-4s">我能抓住的情绪</p>
-			<p class="animated Sliders slideInLeft delay-5s">去珍惜爱你的人，去好好爱身边人</p>
-			<p class="animated Sliders slideInLeft" style="animation-delay: 6s;">小孩子过家家般，我闹过几次</p>
-			<p class="animated Sliders slideInLeft delay-7s" style="animation-delay: 7s;">但每次我都有恃无恐</p>
-			<p class="animated Sliders slideInLeft" style="animation-delay: 8s;">因为有你的偏爱</p>
-			<p class="animated Sliders slideInLeft" style="animation-delay: 9s;">但爱是会在一次次不被珍惜中</p>
-			<p class="animated Sliders slideInLeft" style="animation-delay: 10s;">消磨殆尽的</p>
-			<p class="animated Sliders slideInLeft" style="animation-delay: 11s;">还好一切为时不晚</p>
-			<p class="animated Sliders slideInLeft" style="animation-delay: 12s;">去好好爱你</p>
-			<p class="animated Sliders slideInLeft" style="animation-delay: 13s;">过好有你的每一天</p>
+			<p class="animated Bouncing Entrances bounceInDown delay-3s">最好的朋友在身边，最爱的人的对门</p>
+			<p class="animated Bouncing Entrances bounceInRight delay-4s">我能抓住的情绪</p>
+			<p class="animated Bouncing Entrances bounceInUp delay-5s">去珍惜爱你的人，去好好爱身边人</p>
+			<p class="animated Fading Entrances fadeInDownBig" style="animation-delay: 6s;">小孩子过家家般，我闹过几次</p>
+			<p class="animated Fading Entrances fadeInUpBig" style="animation-delay: 7s;">但每次我都有恃无恐</p>
+			<p class="animated Flippers flipInX" style="animation-delay: 8s;">因为有你的偏爱</p>
+			<p class="animated Flippers flipInY" style="animation-delay: 9s;">但爱是会在一次次不被珍惜中</p>
+			<p class="animated Rotating Entrances rotateIn" style="animation-delay: 10s;">消磨殆尽的</p>
+			<p class="animated Rotating Entrances rotateInUpLeft" style="animation-delay: 11s;">还好一切为时不晚</p>
+			<p class="animated Rotating Entrances rotateInUpRight" style="animation-delay: 12s;">去好好爱你</p>
+			<p class="animated Specials rollIn" style="animation-delay: 13s;">过好有你的每一天</p>
 			<p class="animated Sliders slideInLeft" style="animation-delay: 14s;">以爱你的心去爱生间万物</p>
 	</div>
 	<!-- <video controls="controls" height="550px" width="30%"> 
 		<source src="source/VUE_20200214105343.mp4" type="">
 	</video> -->
-	<iframe src="https://v.vuevideo.net/share/post/8986115146644488377"height="545px" width="30%" frameborder="0" scrolling="no">
+	<iframe src="https://v.vuevideo.net/share/post/8986115146644488377"height="545px" width="30%" frameborder="0" scrolling="no" class="animated Attention Seekers swing">
 	</iframe>
 	<div class="draw fr">
-		<img src="source/IMG_20200214_132028.jpg" width="100px">
-		<img src="source/IMG_20200214_132324.jpg" width="100px">
-		<img src="source/IMG_20200214_132412.jpg" width="100px">
-		<img src="source/IMG_20200214_132532.jpg" width="100px">
+		<img src="source/IMG_20200214_132028.jpg" class="animated Bouncing Entrances bounceInRight delay-3s">
+		<img src="source/IMG_20200214_132324.jpg" class="animated Bouncing Entrances bounceInDown delay-3s">
+		<img src="source/IMG_20200214_132412.jpg" class="animated Bouncing Entrances bounceInLeft delay-5s">
+		<img src="source/IMG_20200214_132532.jpg" class="animated Bouncing Entrances bounceInUp slower">
 	</div>
 </div>
 </body>
 </html>
-<!-- <script type="text/javascript">
-	Vue.prototype.$axios=axios;
-	Vue.use(axios);
-	
-	new Vue({
-		el:"#app",
-		methods:{
-		},
-		created(){
-			this.$axios.get('https://v.vuevideo.net/share/post/8986115146644488377')
-			.then(res=>{
-				console.log(res);
-			})
-			.catch(err=>{
-				console.log(err);
-			})
-		}
-	})
-</script> -->
